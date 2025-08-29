@@ -2,7 +2,12 @@ import logo from './logo.svg';
 import './App.css';
   
 //Agregando estilo a los componentes con inline style
-const estilo = (bg='#333' ) => ({
+
+// Agregamos estilo con objetos js 
+const estilo2 = {
+  boxShadow: '0  5px  3px rgba( 0 ,0 ,0 , 0.5) '
+}
+const estilo = ( { bg  = '#889'}) => ({
   backgroundColor:   bg, 
   color: '#fff',
   padding: ' 10px 15px',
@@ -10,7 +15,8 @@ const estilo = (bg='#333' ) => ({
 })
 const Li = ({  children }) => {
   return (
-    <li style={estilo ( '#457')} className = 'CLase-Li'>{children}</li>
+    <li style= { {...estilo2, ...estilo( { bg : '#333'}) }}
+    className = 'CLase-Li'>{children}</li>
   )
 }
 
