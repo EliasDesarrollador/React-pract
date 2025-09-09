@@ -1,11 +1,12 @@
-import './Button.css'
+
 import Button from "./Button"
-const App =  () => {
+// Reutilizar componentes con estilo 
+const App =  () => { 
     return (    
      <div>
-        <h1>Hola mundo </h1>
-        <Button onClick = { () => console.log('Clikeado')}>
-            Enviar 
+        <h1>Hola mundo </h1> 
+        <Button onClick = { () => console.log('Clikeado')}> 
+            Enviar
         </Button>
 
      </div>

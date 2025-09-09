@@ -1,6 +1,6 @@
 import './Button.css'
-
-const Button = ( props) => {
+/*componente reutilizado con sus estilos utilizando childrens */
+const Button = ( props) => { 
     return (
          <button  {...props}className =  'btn'/>
 
